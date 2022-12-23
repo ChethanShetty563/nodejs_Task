@@ -1,4 +1,5 @@
 import express from 'express';
+import { getStocks } from '../data/stocks';
 import { StockTransaction } from '../service/transactionService';
 const router = express.Router();
 
@@ -16,6 +17,13 @@ router.get('/stock', (req, res) => {
     .catch((e) => {
       res.send({ error: 'No SKU', message: e }).status(404);
     });
+});
+
+/**
+ *
+ */
+router.get('/getAllStocks', (req, res) => {
+  res.send(getStocks());
 });
 
 export default router;
