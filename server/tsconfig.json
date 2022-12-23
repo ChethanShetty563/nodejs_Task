@@ -7,8 +7,8 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "build",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "skipLibCheck": true
   },
-  "include": ["src/**/*"],
-  "types": ["...", "@types/jest"]
+  "include": ["src/**/*"]
 }

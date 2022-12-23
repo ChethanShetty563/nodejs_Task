@@ -4,7 +4,11 @@ import { StockTransaction } from '../service/transactionService';
 const router = express.Router();
 
 /**
- *
+ * @route GET /stock
+ * @desc get the remaining stocks after transaction
+ * @access public
+ * @querystring sku
+ * @return json response of type IStock
  */
 router.get('/stock', (req, res) => {
   // Fetch the querystring
@@ -20,7 +24,10 @@ router.get('/stock', (req, res) => {
 });
 
 /**
- *
+ * @route GET /getAllStocks
+ * @desc gives all the initial stocks
+ * @access public
+ * @return list of all stocks
  */
 router.get('/getAllStocks', (req, res) => {
   res.send(getStocks());
