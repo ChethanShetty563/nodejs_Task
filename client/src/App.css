@@ -1,0 +1,21 @@
+.App {
+    display: flex;
+    flex-direction: row;
+}
+
+.list{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    position: relative;
+}
+.stock {
+    width: 50%;
+    display: flex;
+    position: relative;
+    
+}
+.stockTransaction {
+    width: 50%;
+    position: fixed;
+}
