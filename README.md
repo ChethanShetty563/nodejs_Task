@@ -23,3 +23,18 @@ Note : Make sure that 3002 port is free else change the port
 
 * GET http://localhost:3002/getAllStocks
   * This will return all the initial stocks present in stock.json
+  
+### How to test?
+* Use npm test -- -w for Unit test
+* To test the APIs use Postman
+* Or else use the client as given below
+
+## Client
+This UI is built using reactjs where it list out all the stocks available.
+Click on the Stock sku to get the stocks after transaction
+
+### How to Run?
+* Navigate to client directory --> cd client
+* Install all the dependencies --> npm install
+* Run the Dev server --> npm run start
+* Make sure backend server is already running to fecth the data
