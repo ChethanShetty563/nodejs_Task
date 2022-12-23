@@ -103,6 +103,19 @@ const stocks: IStock[] = [
   { sku: 'HGG795032/35/91', stock: 4009 },
 ];
 
+/**
+ *
+ * @param sku
+ * @returns stock which matches the sku
+ */
 export function getStocksBySKU(sku: string) {
   return stocks.find((element) => element.sku === sku);
+}
+
+/**
+ *
+ * @returns all the stocks
+ */
+export function getStocks() {
+  return stocks;
 }
