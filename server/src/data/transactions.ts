@@ -1103,6 +1103,11 @@ const transactions: ITransaction[] = [
   { sku: 'TVU730483/47/65', type: 'refund', qty: 1 },
 ];
 
+/**
+ *
+ * @param sku
+ * @returns all the elements which matches the sku
+ */
 export function getTransactionsBySKU(sku: string) {
   return transactions.filter((element) => element.sku === sku);
 }
