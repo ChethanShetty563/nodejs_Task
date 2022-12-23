@@ -1,6 +1,6 @@
 import { ITransaction } from 'src/interface/iTransaction';
 
-export const transactions: ITransaction[] = [
+const transactions: ITransaction[] = [
   { sku: 'KED089097/68/09', type: 'order', qty: 8 },
   { sku: 'DOK019240/66/49', type: 'order', qty: 4 },
   { sku: 'XOE089797/10/74', type: 'refund', qty: 5 },
@@ -1102,3 +1102,7 @@ export const transactions: ITransaction[] = [
   { sku: 'QWP084011/40/33', type: 'order', qty: 2 },
   { sku: 'TVU730483/47/65', type: 'refund', qty: 1 },
 ];
+
+export function getTransactionsBySKU(sku: string) {
+  return transactions.filter((element) => element.sku === sku);
+}
