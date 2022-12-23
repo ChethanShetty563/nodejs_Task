@@ -11,6 +11,8 @@ import { TransactionType } from '../enum/transactionType';
 export function StockTransaction(sku: string): Promise<IStock> {
   let initialStock = getStocksBySKU(sku);
   let transactionStock = getTransactionsBySKU(sku);
+  console.log(initialStock);
+  console.log(transactionStock);
 
   if (!initialStock && transactionStock.length == 0) {
     return Promise.reject('SKU is not present in stocks/transaction');
