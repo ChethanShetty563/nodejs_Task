@@ -9,5 +9,6 @@
     "outDir": "build",
     "baseUrl": "."
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "types": ["...", "@types/jest"]
 }
