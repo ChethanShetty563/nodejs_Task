@@ -1,6 +1,6 @@
 import { IStock } from 'src/interface/iStock';
 
-export const stocks: IStock[] = [
+const stocks: IStock[] = [
   { sku: 'LTV719449/39/39', stock: 8525 },
   { sku: 'CLQ274846/07/46', stock: 8414 },
   { sku: 'SXB930757/87/87', stock: 3552 },
@@ -102,3 +102,7 @@ export const stocks: IStock[] = [
   { sku: 'TVN783304/18/16', stock: 8079 },
   { sku: 'HGG795032/35/91', stock: 4009 },
 ];
+
+export function getStocksBySKU(sku: string) {
+  return stocks.find((element) => element.sku === sku);
+}
